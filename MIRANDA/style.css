@@ -100,8 +100,8 @@ nav i{
 #image-div:hover img {
     scale: 1.1;
 }
-#section2{
-    line-height: 400px;
+#section2 p{
+    line-height: 380px;
     width: 95%;
     background-color: #222;
     color: #C2BBB1;
@@ -111,7 +111,7 @@ nav i{
     text-align: center;
     font-family: Canopee;
     letter-spacing: -25px;
-    height: 1000px;
+    height:max-content ;
 }
 
 #img-div :hover img{
@@ -270,6 +270,25 @@ nav i{
     padding: 20px;
 }
 
+
+.inner-block #image-div {
+    height: 60%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#image-div:hover img {
+    scale: 1.1;
+}
+.inner-block #image-div {
+    height: 60%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#image-div:hover img {
+    scale: 1.1;
+}
 .block2 {
     grid-column: 3;
     grid-row: 1 / span 2;
@@ -525,30 +544,53 @@ nav i{
     width: 100%;
     background-color: #C2BBB1;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center; 
     font-size: 35px;
     position: relative;
 }
 
 .card {
     height: 350px;
-    width: 55%;
+    width: 53%;
     padding: 15px;
     font-family: A;
     font-weight: 100;
-    border: 1px solid #222;
+    border: 3px solid #2b2929f3;
     box-sizing: border-box;
-    transition: all ease 0.6s;
-    margin-right: -20%; 
-    overflow-x: hidden;
+    transition: all ease 0.9s;
+    position: absolute; 
+    background-color: #C2BBB1; 
+    box-shadow: #1b1b1b;
+    border-radius: 10px;
+}
+
+.card:nth-child(1) {
+    z-index: 1;
+    top: 0;
+    left: 0;
 }
 
 .card:nth-child(2) {
-    z-index: 1; 
+    z-index: 2;
+    top: 0px; 
+    left: 20%; 
+}
+
+.card:nth-child(3) {
+    z-index: 3;
+    top: 0px; 
+    left: 40%; 
+}
+
+.card:nth-child(4) {
+    z-index: 4;
+    top: 0px; 
+    left: 60%; 
 }
 
 .card:hover {
-    transform: translateX(43%);
+    transform: translateX(60%);
     background-color: #beb4a8;
 }
 
@@ -557,10 +599,11 @@ nav i{
     font-family: A;
     font-weight: 100;
     position: relative;
-    padding: 15px;
-    border: 1px dashed #222;
+    padding: 5px;
+    border: 2px dashed #222;
     background-color: #CAC1B6;
     box-sizing: border-box;
+   
 }
 
 #page9 img {
@@ -570,7 +613,7 @@ nav i{
 }
 
 #sub {
-    padding-top: 20px;
+    padding-top: 8%;
     font-family: Canopee;
     font-size: 35px;
     display: flex;
@@ -584,9 +627,8 @@ nav i{
     background-color: #C4BCB3;
     border-top: 1px solid #2f2f2f;
     border-bottom: 1px solid #2f2f2f;
-
     white-space: nowrap;
-    overflow-x: auto;
+    overflow-x: hidden;
     overflow-y: hidden;
 }
 
